@@ -7,17 +7,17 @@
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
-    <orderEntry type="module-library" exported="">
+    <orderEntry type="module-library">
       <library>
         <CLASSES>
-          <root url="file://$MODULE_DIR$/../../../spring-framework-5.0.5.RELEASE-dist/spring-framework-5.0.5.RELEASE/libs" />
+          <root url="file://$MODULE_DIR$/../../spring-framework-5.0.5.RELEASE-dist/spring-framework-5.0.5.RELEASE/libs" />
         </CLASSES>
         <JAVADOC />
         <SOURCES>
-          <root url="file://$MODULE_DIR$/../../../spring-framework-5.0.5.RELEASE-dist/spring-framework-5.0.5.RELEASE/libs" />
+          <root url="file://$MODULE_DIR$/../../spring-framework-5.0.5.RELEASE-dist/spring-framework-5.0.5.RELEASE/libs" />
         </SOURCES>
-        <jarDirectory url="file://$MODULE_DIR$/../../../spring-framework-5.0.5.RELEASE-dist/spring-framework-5.0.5.RELEASE/libs" recursive="false" />
-        <jarDirectory url="file://$MODULE_DIR$/../../../spring-framework-5.0.5.RELEASE-dist/spring-framework-5.0.5.RELEASE/libs" recursive="false" type="SOURCES" />
+        <jarDirectory url="file://$MODULE_DIR$/../../spring-framework-5.0.5.RELEASE-dist/spring-framework-5.0.5.RELEASE/libs" recursive="false" />
+        <jarDirectory url="file://$MODULE_DIR$/../../spring-framework-5.0.5.RELEASE-dist/spring-framework-5.0.5.RELEASE/libs" recursive="false" type="SOURCES" />
       </library>
     </orderEntry>
   </component>
