@@ -18,7 +18,11 @@ public class Main {
         //call a method on bean
         System.out.println(coach1.getDailyWorkout());
         System.out.println(coach1.getDailyFortune());
-    //close the context
+
+        Coach coach2 = context.getBean("tennisCoachField",Coach.class);// use name of the class with lower case 1st letter
+        System.out.println(coach2.getDailyWorkout());
+        System.out.println(coach2.getDailyFortune());
+        //close the context
         context.close();
     }
 }
