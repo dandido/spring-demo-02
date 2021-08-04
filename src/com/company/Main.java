@@ -23,6 +23,9 @@ public class Main {
         System.out.println(coach2.getDailyWorkout());
         System.out.println(coach2.getDailyFortune());
         //close the context
+
+        Entreprise dev1 = context.getBean("entreprise",Entreprise.class);// use name of the class with lower case 1st letter
+        System.out.println(dev1.getDevelopper().getProgrammingLanguage());
         context.close();
     }
 }
