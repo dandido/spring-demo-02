@@ -1,5 +1,6 @@
 package com.company;
 
 public interface Coach {
-    public String DailyWorkout();
+    public String getDailyWorkout();
+    public String getDailyFortune();
 }

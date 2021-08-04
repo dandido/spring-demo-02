@@ -11,8 +11,14 @@ public class Main {
        // Coach coach = context.getBean("sellytennisCoach",Coach.class); Named
         Coach coach = context.getBean("tennisCoach",Coach.class);// use name of the class with lower case 1st letter
         //call a method on bean
-        System.out.println(coach.DailyWorkout());
-        //close the context
+        System.out.println(coach.getDailyWorkout());
+        System.out.println(coach.getDailyFortune());
+
+        Coach coach1 = context.getBean("tennisCoachSetterInjection",Coach.class);// use name of the class with lower case 1st letter
+        //call a method on bean
+        System.out.println(coach1.getDailyWorkout());
+        System.out.println(coach1.getDailyFortune());
+    //close the context
         context.close();
     }
 }
