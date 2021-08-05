@@ -12,12 +12,30 @@ public class Entreprise {
      *
      * the name inside the () is the class name with a lower case first letter
      */
-    @Autowired
+    /*@Autowired
     //@Qualifier("developperAndroid")
-    @Qualifier("developperJAva")
+    @Qualifier("developperJAva")    private Developper developper;
+
+    public Developper getDevelopper() {
+        return developper;
+    }*/
+
+            /**
+            Here we are injection developperJAva1
+             And we are testing the equality with @Scope in the @Component
+             instead of using the XML
+
+             */
     private Developper developper;
+    Entreprise(    @Qualifier("developperJAva")  Developper developperJAva1,
+                   @Qualifier("developperJAva")  Developper developperJAva2,
+                   @Qualifier("developperAndroid")  Developper developperAndroid1 ,
+                   @Qualifier("developperAndroid")  Developper developperAndroid2){
+        this.developper = developperJAva1;
+        System.out.println("is same instance ? ? :: " + (developperJAva1==developperJAva2) + developperJAva1 + " --- "+developperJAva2 );
+        System.out.println("is same instance ? ? :: " + (developperAndroid1==developperAndroid2) + developperAndroid1 + " --- "+developperAndroid2 );
 
-
+    }
     public Developper getDevelopper() {
         return developper;
     }
