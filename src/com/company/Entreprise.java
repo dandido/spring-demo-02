@@ -4,6 +4,9 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.stereotype.Component;
 
+import java.util.Arrays;
+import java.util.Scanner;
+
 @Component
 public class Entreprise {
     /**
@@ -39,4 +42,5 @@ public class Entreprise {
     public Developper getDevelopper() {
         return developper;
     }
+
 }
